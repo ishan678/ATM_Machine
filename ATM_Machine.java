@@ -8,7 +8,7 @@ public class ATM_Machine {
 		
 
 		int initial_amount =10000;
-		int transaction=0;
+		int amount=0;
 
 		while(true) {
 		System.out.println("*** Welcome to ATM Machine ***");
@@ -25,21 +25,21 @@ public class ATM_Machine {
 		case 1:
 		
 			System.out.println("Please Enter Amount");
-			transaction = sc.nextInt();
-			initial_amount = initial_amount+transaction;
-			System.out.println("Your transaction is successful");
+			amount = sc.nextInt();
+			initial_amount = initial_amount+amount;
+			System.out.println("Your amount is successful");
 			break;
 			
 		case 2:
 			System.out.println("Please Enter Amount");
-			transaction = sc.nextInt();
-			if(initial_amount>=transaction) {
-			System.out.println("Your Transaction is successful!");
-			initial_amount = initial_amount-transaction;
+			amount = sc.nextInt();
+			if(initial_amount>=amount) {
+			System.out.println("Your amount is successful!");
+			initial_amount = initial_amount-amount;
 			
 			}
 			else {
-				System.out.println("Invalid. Transaction Failed");
+				System.out.println("Invalid. amount Failed");
 			}
 			break;
 			
@@ -49,7 +49,8 @@ public class ATM_Machine {
 			
 		case 4:{
 			
-			System.out.println(0);
+			System.out.println("Thankyou!");
+			System.exit(0);
 		
 			break;}
 		}
