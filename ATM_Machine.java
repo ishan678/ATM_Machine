@@ -9,10 +9,12 @@ public class ATM_Machine {
 
 		int initial_amount =10000;
 		int amount=0;
+		System.out.println("Enter your Account Number");
+		int accNo = sc.nextInt();
 		System.out.println("Enter your 4-digit pin");
 		int pin = sc.nextInt();
 
-	if(pin==1000){
+	if(accNo == 1234567 && pin==1000){
 		while(true) {
 		System.out.println("*** Welcome to ATM Machine ***");
 		
